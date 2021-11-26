@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		th{text-decoration: overline;}
+		td{text-decoration: underline;}
+		label{text-decoration: line-through;}
+
+	span{
+		color: blue;
+		border: 1px solid black;
+	}
+
+	.extra span{
+		color: inherit;
+	}
+
+	.info1{
+		background-color: lightskyblue;
+	}
+
+	.info2{
+		background-color: red;
+	}
+
+	.info3{
+		background-color: purple;
+	}
+	</style>
+</head>
+<body>
+	<form>
+	<table style="border:3px #cccccc solid;" cellpadding="10" border=‘1’>
+	<tr>
+		<th colspan="3" class="extra" style="color: purple;">About -- <span>110306032</span></th>
+	</tr>
+
+	<tr>
+		<td rowspan="3" class="info1"><img src = "kamito.jpeg" width = "40" height = "120" alt = "kamito"><br>personal photo</td>
+		<td colspan="2"><label>Name:</label>
+			<input name = "name" type = "text" size = "21" maxlength="20"><br>
+
+			<label>Gender:</label>
+				<input type = "radio" name= "Gender">Male
+				<input type = "radio" name= "Gender">Female
+				<input type = "radio" name= "Gender">Other
+		</td>
+	</tr>
+
+	<tr>
+		<td><label>Country:</label>
+			<select>
+				<option>Taipei</option>
+				<option>Tainan</option>
+				<option>Taichung</option>
+				<option>Taoyuan</option>
+			</select>
+		</td>
+
+		<td><label>Birthday:</label>
+			<input type = "date">
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2"><label>E-mail:</label>
+			<input type = "E-mail" size = "21" maxlength="30">
+		</td>
+	</tr>
+
+	<tr>
+		<td>Hobby</td>
+		<td colspan="2" class="info3">
+				<input type = "checkbox">Swimming
+				<input type = "checkbox">Volleyball
+				<input type = "checkbox">Movie
+				<input type = "checkbox">Game
+				<input type = "checkbox">Sleep
+		</td>
+	</tr>
+
+	<tr>
+		<td>Skill</td>
+		<td colspan="2" class="info3">
+				<input type = "checkbox">JAVA
+				<input type = "checkbox">HTML
+				<input type = "checkbox">Python
+				<input type = "checkbox">Microsoft Office
+				<input type = "checkbox">Premiere
+		</td>
+	</tr>
+
+	<tr>
+		<td class="info2">Say Something</td>
+		<td colspan="2"><textarea row="5" cols="25" placeholder = "Say something here."></textarea></td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<input type = "submit" value = "提交">
+			<input type = "reset" value = "重設">
+		</td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
